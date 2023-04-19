@@ -1,6 +1,6 @@
 name: image_cropper_platform_interface
 description: A common platform interface for the image_cropper plugin.
-repository: https://github.com/BigJiajun/flutter_image_cropper
+repository: https://github.com/BigJiajun/image_cropper_platform_interface
 version: 3.0.3
 
 environment:

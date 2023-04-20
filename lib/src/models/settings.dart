@@ -162,6 +162,8 @@ class AndroidUiSettings extends PlatformUiSettings {
   /// set to true to hide the bottom controls (shown by default)
   final bool? hideBottomControls;
 
+  final bool? showCustomizeView;
+
   /// desired aspect ratio is applied (from the list of given aspect ratio presets)
   /// when starting the cropper
   final CropAspectRatioPreset? initAspectRatio;
@@ -185,6 +187,7 @@ class AndroidUiSettings extends PlatformUiSettings {
     this.showCropGrid,
     this.lockAspectRatio,
     this.hideBottomControls,
+    this.showCustomizeView,
     this.initAspectRatio,
   });
 
@@ -209,6 +212,7 @@ class AndroidUiSettings extends PlatformUiSettings {
         'android.show_crop_grid': this.showCropGrid,
         'android.lock_aspect_ratio': this.lockAspectRatio,
         'android.hide_bottom_controls': this.hideBottomControls,
+        'android.show_customize_view': this.showCustomizeView,
         'android.init_aspect_ratio':
             aspectRatioPresetName(this.initAspectRatio),
       };
